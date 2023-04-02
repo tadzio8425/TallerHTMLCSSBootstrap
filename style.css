@@ -60,4 +60,13 @@ p{
     align-items: center;
 }
 
+#footer-text{
+    text-align: end;
+}
+
+#albumDisplayer{
+    text-align: center;
+
+}
+
 
