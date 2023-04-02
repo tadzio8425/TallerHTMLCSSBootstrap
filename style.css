@@ -5,8 +5,19 @@
   }
 
 
+.container-fluid #header{
+
+    background-color: #a0a081;
+    color: #1d1d1b;
+}
+
+.container-fluid{
+    background-color: lightgray;
+}
+
 h1, h2, h3{
     font-family: SuffolkPunch !important;
+    color: #1d1d1b;
 }
 
 #header{
@@ -16,7 +27,8 @@ h1, h2, h3{
 
 #albumImgSec{
     max-width: 100%;
-    text-align: center;
+    text-align:center;
+    padding-bottom: 40px;
 }
 
 #albumImg{
@@ -26,3 +38,26 @@ h1, h2, h3{
 p{
     text-align: justify;
 }
+
+#listen{
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    justify-items: center;
+    background-color: whitesmoke;
+    border-radius: 35px;
+    width: 70%;
+    margin-left: 14%;
+}
+
+#footer{
+    display: flex;
+    background-color: #1d1d1b;
+    color: snow;
+    height: 85px;
+    align-items: center;
+}
+
+
