@@ -4,6 +4,11 @@
     src: url(/assets/fonts/SuffolkPunch\ Arctic\ Monkeys\ The\ Car.ttf);
   }
 
+@font-face {
+    font-family: TranquilityFont;
+    src: url(/assets/fonts/tbhc.ttf);
+  }
+
 
 .container-fluid #header{
 
@@ -16,7 +21,7 @@
 }
 
 h1, h2, h3{
-    font-family: SuffolkPunch !important;
+    font-family: SuffolkPunch;
     color: #1d1d1b;
 }
 

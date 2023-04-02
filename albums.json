@@ -1,0 +1,54 @@
+{
+    "THE_CAR":{
+        "fontFamily":"SuffolkPunch",
+        "albumName":"The Car",
+        "releaseDate":"October 21st, 2022",
+        "length":"37:18",
+        "numTracks":"10",
+        "producer":"James Ford",
+        "description":"The Car is the seventh studio album by English rock band Arctic Monkeys, released on 21 October 2022 by Domino Recording Company. It was written by band frontman <a target='_blank'  href='https://en.wikipedia.org/wiki/Alex_Turner'>Alex Turner</a> in his home in Los Angeles and Paris. It was produced in Suffolk, Paris and London by frequent Arctic Monkeys collaborator James Ford, alongside frequent guest musicians Tom Rowley, Loren Humphrey and Tyler Parkford. It was arranged by Bridget Samuels and Turner. Drummer Matt Helders took the picture on the album cover, which depicts a white car in an otherwise empty car park. Its title refers to said cover and the abundance of references to vehicles in the lyrics. The Car builds upon the sound from the band´s previous album, <a target='_blank'  href='https://en.wikipedia.org/wiki/Tranquility_Base_Hotel_%26_Casino'>Tranquility Base Hotel and Casino (2018)</a>. It features a wide array of genres that include art rock, orchestral rock, lounge pop, baroque pop, and funk, as well as elements of jazz. It also draws influence from soul music, electronic music, glam rock, bossa nova, traditional pop and vintage film soundtracks. Its lyrical content explores show business, specifically the music and film industries, and nostalgia.",
+        "albumURL":"https://open.spotify.com/embed/album/2GROf0WKoP5Er2M9RXVNNs?utm_source=generator",
+        "spotifyLink":"https://open.spotify.com/album/2GROf0WKoP5Er2M9RXVNNs?si=aSjjgZAnSFqHeVEJrYyJoA",
+        "youtubeLink":"https://www.youtube.com/playlist?list=PLXboAJo1ui6EhhF6C0_nYsrY8Am8pO2QK",
+        "appleLink":"https://music.apple.com/us/album/the-car/1639369016",
+        "headerColor":"#a0a081",
+        "backgroundColor":"lightgray",
+        "titlesColor":"#1d1d1b",
+        "textColor":"#1d1d1b",
+        "borderColor":"whitesmoke"
+    },
+    "TBHC":{
+        "fontFamily":"TranquilityFont",
+        "albumName":"Tranquility Base Hotel + Casino",
+        "releaseDate":"May 11th, 2017",
+        "length":"40:51",
+        "numTracks":"11",
+        "producer":"James Ford & Alex Turner",
+        "description":"Tranquility Base Hotel & Casino is the sixth studio album by English rock band Arctic Monkeys, released on 11 May 2018 by Domino Recording Company. It was written by band frontman Alex Turner in 2016 on a Steinway Vertegrand piano in his Los Angeles home. It was produced in Los Angeles, Paris and London by frequent Arctic Monkeys collaborator James Ford and Turner, alongside a wide array of guest musicians including Tom Rowley, Loren Humphrey, James Righton, Zach Dawes, Tyler Parkford and Cam Avery. Turner designed the album artwork himself, which depicts the resort with cardboard cut-outs and a tape recorder. Its title refers to Tranquility Base, the site of the 1969 Apollo 11 Moon landing. Tranquility Base Hotel & Casino is a major departure from the band´s previous guitar-heavy work, being less accessible than its internationally successful predecessor, AM (2013). It features a rich sound that embodies psychedelic pop, lounge pop, space pop, and glam rock, as well as elements of jazz. It also draws influence from soul, progressive rock, funk, French pop and film soundtracks of the 1960s. Instrumentally, it incorporates vintage synthesisers and keyboards, including organs, pianos, harpsichords and the dolceola, as well as the Orchestron, Farfisa and RMI Rocksichord. Baritone and lap steel guitars are introduced by the band on multiple tracks, in addition to the electric and acoustic guitars typically used by the band, as well as a variety of percussion instruments, including rotary timpani and vibraphones. Its lyrical content draws heavily from science fiction and film, exploring consumerism, politics, religion and technology through the concept of a luxury resort on the Moon told from the perspective of various characters, such as the singer in the in-house band on ´Star Treatment´ or the hotel´s receptionist on the title track.",
+        "albumURL":"https://open.spotify.com/embed/album/1jeMiSeSnNS0Oys375qegp?utm_source=generator&theme=0",
+        "spotifyLink":"https://open.spotify.com/album/1jeMiSeSnNS0Oys375qegp?si=OMX3ks2ZQhGkPJHOeQ4V3w",
+        "youtubeLink":"https://www.youtube.com/playlist?list=PLXboAJo1ui6GFhaGrUFrHAcDgzeLnVyon",
+        "appleLink":"https://music.apple.com/us/album/tranquility-base-hotel-casino/1367926252",
+        "headerColor":"#1d1d1b",
+        "backgroundColor":"#2d2d2d",
+        "titlesColor":"#dcc8a4",
+        "textColor":"whitesmoke",
+        "borderColor":"#dcc8a4"
+
+    },
+    "AM":{
+
+    },
+    "SIAS":{
+
+    },
+    "HUMBUG":{
+
+    },
+    "FWN":{
+
+    },
+    "WPSIATWIN":{
+
+    }
+}

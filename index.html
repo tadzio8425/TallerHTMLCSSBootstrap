@@ -6,15 +6,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
      <!-- Bootstrap Font Icon CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class="container-fluid">
             <div class="row pb-3 pt-4 mt- mb-2 border-bottom" id="header">
                 <h1 class="col-7 text-uppercase">Arctic Monkeys</h1>
-                <h3 class="col text-muted text-uppercase link-secondary">Home</h2>
-                <h3 class="col text-muted text-uppercase link-secondary">Shows</h2>
-                <h3 class="col text-muted text-uppercase link-secondary">Merch</h2/assets/imgs/am_thecar_dig.jpg>
+                <h3 class="col text-opacity-75 text-uppercase ">Home</h2>
+                <h3 class="col text-opacity-75 text-uppercase ">Shows</h2>
+                <h3 class="col text-opacity-75 text-uppercase">Merch</h2/assets/imgs/am_thecar_dig.jpg>
             </div>
             <div class="row" id="albumDisplayer"> 
                 <div class="col-7 border-right" id="albumInfo">
@@ -54,38 +56,42 @@
                           </tr>
                         </tbody>
                     </table>
-                    <p>The Car is the seventh studio album by English rock band Arctic Monkeys, released on 21 October 2022 by Domino Recording Company. It was written by band frontman <a target="_blank"  href="https://en.wikipedia.org/wiki/Alex_Turner">Alex Turner</a> in his home in Los Angeles and Paris. It was produced in Suffolk, Paris and London by frequent Arctic Monkeys collaborator James Ford, alongside frequent guest musicians Tom Rowley, Loren Humphrey and Tyler Parkford. It was arranged by Bridget Samuels and Turner. Drummer Matt Helders took the picture on the album cover, which depicts a white car in an otherwise empty car park. Its title refers to said cover and the abundance of references to vehicles in the lyrics.
+                    <p id="albumDescription">The Car is the seventh studio album by English rock band Arctic Monkeys, released on 21 October 2022 by Domino Recording Company. It was written by band frontman <a target="_blank"  href="https://en.wikipedia.org/wiki/Alex_Turner">Alex Turner</a> in his home in Los Angeles and Paris. It was produced in Suffolk, Paris and London by frequent Arctic Monkeys collaborator James Ford, alongside frequent guest musicians Tom Rowley, Loren Humphrey and Tyler Parkford. It was arranged by Bridget Samuels and Turner. Drummer Matt Helders took the picture on the album cover, which depicts a white car in an otherwise empty car park. Its title refers to said cover and the abundance of references to vehicles in the lyrics.
                     The Car builds upon the sound from the band's previous album, <a target="_blank"  href="https://en.wikipedia.org/wiki/Tranquility_Base_Hotel_%26_Casino">Tranquility Base Hotel and Casino (2018)</a>. It features a wide array of genres that include art rock, orchestral rock, lounge pop, baroque pop, and funk, as well as elements of jazz. It also draws influence from soul music, electronic music, glam rock, bossa nova, traditional pop and vintage film soundtracks. Its lyrical content explores show business, specifically the music and film industries, and nostalgia.</p> 
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2GROf0WKoP5Er2M9RXVNNs?utm_source=generator" width="100%" height=20% frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>  
+                    <iframe id="spotifyPlayer" style="border-radius:12px" src="https://open.spotify.com/embed/album/2GROf0WKoP5Er2M9RXVNNs?utm_source=generator" width="100%" height=20% frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>  
 
-                    <button type="button" class="btn btn-secondary btn-lg">More Info</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-secondary btn-lg">More Info</button>
                    
                 </div>
                 <div class="col" id="albumImgSec">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="assets/imgs/am_thecar_dig.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/assets/imgs/am_thecar_dig.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/tbhc.jpg" class="d-block w-100" alt="...">
+                      </div>
                     </div>
-                    <h2 style="margin-top: 20px;">The Car</h2>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                    <h2 id="albumName" class="text-uppercase" style="margin-top: 20px;">The Car</h2>
                     <div id="listen" class="row">
                         <h5 class="col-3">Listen on: </h5>
-                        <a class = "col-2" target="_blank" style="margin-bottom: 4px;" href="https://open.spotify.com/album/2GROf0WKoP5Er2M9RXVNNs?si=aSjjgZAnSFqHeVEJrYyJoA"><span id="boot-icon" class="bi bi-spotify" style="font-size:2rem; color: rgb(30, 215, 96);"></span>
+                        <a id="spotifyLink" class = "col-2" target="_blank" style="margin-bottom: 4px;" href="https://open.spotify.com/album/2GROf0WKoP5Er2M9RXVNNs?si=aSjjgZAnSFqHeVEJrYyJoA"><span id="boot-icon" class="bi bi-spotify" style="font-size:2rem; color: rgb(30, 215, 96);"></span>
                         </a>
 
-                        <a class="col-2" target="_blank" href="https://www.youtube.com/playlist?list=PLXboAJo1ui6EhhF6C0_nYsrY8Am8pO2QK"><span id="boot-icon" class="bi bi-youtube" style="font-size: 2.3rem; color: rgb(255, 0, 0);"></span>
+                        <a id="youtubeLink" class="col-2" target="_blank" href="https://www.youtube.com/playlist?list=PLXboAJo1ui6EhhF6C0_nYsrY8Am8pO2QK"><span id="boot-icon" class="bi bi-youtube" style="font-size: 2.3rem; color: rgb(255, 0, 0);"></span>
                         </a>
-                        <a class="col-2" target="_blank" href="https://music.apple.com/us/album/the-car/1639369016" style="margin-bottom: 10px;">
+                        <a id="appleLink" class="col-2" target="_blank" href="https://music.apple.com/us/album/the-car/1639369016" style="margin-bottom: 10px;">
                             <span id="boot-icon" class="bi bi-apple" style="font-size: 2.2rem; color: rgb(84, 84, 84);"></span>
                         </a>
 
@@ -100,5 +106,46 @@
                 </footer>
             </div>
         </div>
-    </body>
+
+        <div class="modal" id="formModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Information Form</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter your name">
+
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="cellphone">Mobile Phone</label>
+                          <input type="number" class="form-control" id="cellphone" placeholder="Enter your number">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Do you authorize the use of your data?</label>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Send form</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="changeAlbum.js"></script>
+      </body>
 </html>
