@@ -1,0 +1,28 @@
+/*Fonts*/
+@font-face {
+    font-family: SuffolkPunch;
+    src: url(/assets/fonts/SuffolkPunch\ Arctic\ Monkeys\ The\ Car.ttf);
+  }
+
+
+h1, h2, h3{
+    font-family: SuffolkPunch !important;
+}
+
+#header{
+    align-items:center;
+    justify-content: center;
+}
+
+#albumImgSec{
+    max-width: 100%;
+    text-align: center;
+}
+
+#albumImg{
+    max-width: 100%;
+}
+
+p{
+    text-align: justify;
+}
